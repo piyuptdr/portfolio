@@ -716,7 +716,7 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('data.json')
+            fetch('https://piyuptdr.github.io/portfolio/data.json')
                 .then(res => {
                     if (!res.ok) {
                         throw new Error(`HTTP error! status: ${res.status}`);
