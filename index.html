@@ -5,573 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Priya - Fashion Designer</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
-    <style>
-        /* Variables for Colors & Fonts */
-        :root {
-            --color-primary-accent: #CE5A57; /* Reddish-brown */
-            --color-secondary-accent: #D5C9B0; /* Light gold/beige */
-            --color-dark-text: #3A3A3A; /* Deep soft charcoal */
-            --color-body-text: #5C5C5C; /* Slightly lighter charcoal */
-            --color-bg-light: #FDFCF9; /* Very light, warm off-white */
-            --color-bg-medium: #F6F3F0; /* Slightly deeper, soft beige/cream */
-            --color-white: #FFFFFF; /* Pure white */
-
-            --font-heading: 'Playfair Display', serif;
-            --font-body: 'Montserrat', sans-serif;
-
-            --border-radius-lg: 12px;
-            --border-radius-md: 8px;
-            --transition-speed: 0.35s ease-out;
-
-            /* Subtle Shadows */
-            --shadow-light: rgba(0, 0, 0, 0.04);
-            --shadow-medium: rgba(0, 0, 0, 0.08);
-        }
-
-        /* General Body & Typography */
-        html {
-            scroll-padding-top: 80px; /* For sticky navbar */
-        }
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg-light);
-            color: var(--color-body-text);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden; /* Prevent horizontal scroll from animations/clip-path */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-heading);
-            color: var(--color-dark-text);
-            line-height: 1.2;
-            margin-bottom: 0.8em;
-        }
-        h2 {
-            /* Adjusted from 3.5rem */
-            font-size: 3rem; /* Reduced from 3.5rem */
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.05em;
-        }
-        .section-subtitle {
-            display: block;
-            /* Adjusted from 1.25rem */
-            font-size: 1.1rem; /* Reduced from 1.25rem */
-            font-weight: 300;
-            color: var(--color-body-text);
-            margin-bottom: 3rem; /* Reduced from 4rem */
-            text-align: center;
-            letter-spacing: 0.08em;
-        }
-        a {
-            color: var(--color-primary-accent);
-            text-decoration: none;
-            transition: color var(--transition-speed);
-        }
-        a:hover, a:focus {
-            color: var(--color-dark-text);
-            text-decoration: underline;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: var(--color-white);
-            box-shadow: 0 2px 10px var(--shadow-light);
-            padding: 1rem 0;
-            transition: padding var(--transition-speed);
-            z-index: 1020; /* Higher than other elements */
-        }
-        .navbar-brand {
-            font-family: var(--font-heading);
-            font-weight: 700;
-            font-size: 2rem; /* Reduced from 2.2rem */
-            color: var(--color-primary-accent) !important;
-            letter-spacing: 0.05em;
-        }
-        .nav-link {
-            color: var(--color-body-text) !important;
-            font-size: 1rem; /* Reduced from 1.05rem */
-            font-weight: 500;
-            padding: 0.6rem 1.1rem; /* Adjusted padding */
-            transition: color var(--transition-speed), background-color var(--transition-speed);
-        }
-        .nav-link:hover, .nav-link:focus {
-            color: var(--color-primary-accent) !important;
-            background-color: rgba(206, 90, 87, 0.05); /* Light hover background */
-            border-radius: var(--border-radius-md);
-        }
-        .navbar-toggler {
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-        .navbar-toggler-icon {
-            filter: none; /* Keep default dark icon */
-        }
-
-        /* General Section Styling */
-        .section {
-            padding: 6rem 0; /* Reduced from 7rem */
-            position: relative;
-            z-index: 1; /* For stacking contexts with dividers */
-        }
-        .bg-light-alt { /* For alternating sections */
-            background-color: var(--color-bg-medium);
-        }
-
-        /* Buttons */
-        .btn-theme {
-            background-color: var(--color-primary-accent);
-            color: var(--color-white);
-            border: 2px solid var(--color-primary-accent);
-            padding: 0.8rem 2.2rem; /* Adjusted padding */
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem; /* Reduced from 1.1rem */
-            letter-spacing: 0.05em;
-            transition: all var(--transition-speed);
-        }
-        .btn-theme:hover {
-            background-color: var(--color-white);
-            color: var(--color-primary-accent);
-            box-shadow: 0 8px 20px var(--shadow-medium);
-            transform: translateY(-2px);
-        }
-        .btn-outline-theme {
-            background-color: transparent;
-            color: var(--color-primary-accent);
-            border: 2px solid var(--color-primary-accent);
-            padding: 0.8rem 2.2rem; /* Adjusted padding */
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem; /* Reduced from 1.1rem */
-            letter-spacing: 0.05em;
-            transition: all var(--transition-speed);
-        }
-        .btn-outline-theme:hover {
-            background-color: var(--color-primary-accent);
-            color: var(--color-white);
-            box-shadow: 0 8px 20px var(--shadow-medium);
-            transform: translateY(-2px);
-        }
-
-        /* --- HERO SECTION --- */
-        #home {
-            background-color: var(--color-bg-light);
-            padding: 0; /* No vertical padding, controlled by min-height and content */
-            min-height: 80vh; /* Reduced from 90vh */
-            display: flex; /* Use flexbox for vertical centering */
-            align-items: center;
-            justify-content: center;
-        }
-        #home .row {
-            align-items: center; /* Vertically align image and text */
-            margin: 0; /* Reset row margins */
-            width: 100%; /* Ensure row takes full width */
-        }
-        #home .hero-text-container {
-            padding: 60px 40px; /* Inner padding for text content */
-            text-align: left;
-        }
-        #home .hero-image-container {
-            height: 100%; /* Take full height of its column */
-            display: flex;
-            align-items: stretch; /* Stretch image to fill container */
-            justify-content: flex-end; /* Align image to the right */
-            overflow: hidden; /* Hide overflow from image */
-            position: relative; /* For clip-path */
-        }
-        #home .hero-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Cover the container */
-            object-position: center right; /* Focus on right side */
-            filter: brightness(1.05) contrast(1.05); /* Subtle enhancement */
-            border-radius: var(--border-radius-lg);
-            box-shadow: 0 20px 60px var(--shadow-light); /* More pronounced shadow for hero image */
-        }
-
-        #home h1 {
-            /* Adjusted from 6rem */
-            font-size: 5rem; /* Reduced from 6rem */
-            font-weight: 700;
-            margin-bottom: 0.1em;
-            text-transform: capitalize;
-            letter-spacing: 0.08em;
-            color: var(--color-dark-text);
-            text-shadow: 0 3px 8px rgba(0,0,0,0.08);
-        }
-        #home .hero-subtitle {
-            font-family: var(--font-body);
-            /* Adjusted from 1.8rem */
-            font-size: 1.5rem; /* Reduced from 1.8rem */
-            font-weight: 500;
-            color: var(--color-primary-accent); /* Accent color for sub-title */
-            margin-bottom: 1rem; /* Reduced from 1.5rem */
-            letter-spacing: 0.05em;
-            display: block; /* Ensure it takes its own line */
-        }
-        #home .hero-description {
-            /* Adjusted from 1.3rem */
-            font-size: 1.15rem; /* Reduced from 1.3rem */
-            font-weight: 400;
-            color: var(--color-body-text);
-            margin-bottom: 2rem; /* Reduced from 2.5rem */
-            line-height: 1.6;
-        }
-
-        /* --- ABOUT SECTION --- */
-        #about {
-            background-color: var(--color-bg-medium);
-            padding: 6rem 0; /* Ensure consistent padding */
-            display: flex;
-            align-items: center;
-        }
-        #about .about-image-wrapper {
-            max-width: 400px; /* Reduced from 450px */
-            height: 400px; /* Reduced from 450px */
-            overflow: hidden;
-            border-radius: var(--border-radius-lg);
-            box-shadow: 0 10px 40px var(--shadow-light);
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-        }
-        #about .about-image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        #about .about-image-wrapper:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px var(--shadow-medium);
-        }
-        #about .about-text-content {
-            /* Adjusted from 1.15rem */
-            font-size: 1.05rem; /* Reduced from 1.15rem */
-            line-height: 1.8;
-            color: var(--color-body-text);
-        }
-        #about h2 {
-            text-align: left; /* Align about heading left */
-        }
-
-        /* --- PORTFOLIO SECTION --- */
-        #portfolio {
-            background-color: var(--color-bg-light);
-        }
-        #portfolio .slick-slide {
-            padding: 0 15px; /* Spacing between slides */
-            box-sizing: border-box;
-        }
-        #portfolio .slick-slide img {
-            width: 100%;
-            height: 350px; /* Reduced from 400px */
-            object-fit: cover;
-            border-radius: var(--border-radius-md);
-            box-shadow: 0 8px 30px var(--shadow-light);
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-        }
-        #portfolio .slick-slide img:hover {
-            transform: translateY(-5px) scale(1.01);
-            box-shadow: 0 12px 40px var(--shadow-medium);
-        }
-
-        /* Slick dots and arrows customization */
-        .slick-dots {
-            bottom: -40px; /* Adjusted position */
-        }
-        .slick-dots li button:before {
-            font-size: 10px; /* Reduced size of dots */
-            color: var(--color-primary-accent);
-            opacity: 0.3;
-        }
-        .slick-dots li.slick-active button:before {
-            opacity: 0.75;
-            color: var(--color-primary-accent);
-        }
-        .slick-prev:before, .slick-next:before {
-            font-size: 25px; /* Reduced size of arrows */
-            color: var(--color-primary-accent);
-            opacity: 0.7;
-            transition: opacity var(--transition-speed);
-        }
-        .slick-prev:hover:before, .slick-next:hover:before {
-            opacity: 1;
-        }
-        .slick-prev { left: -30px; } /* Adjusted position */
-        .slick-next { right: -30px; } /* Adjusted position */
-        @media (max-width: 768px) {
-            .slick-prev { left: -5px; z-index: 10;}
-            .slick-next { right: -5px; z-index: 10;}
-        }
-
-
-        /* --- SERVICES SECTION --- */
-        #services {
-            background-color: var(--color-bg-medium);
-        }
-        #services .card {
-            border: none;
-            border-radius: var(--border-radius-md);
-            box-shadow: 0 10px 30px var(--shadow-light);
-            transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-            background-color: var(--color-white); /* White cards on medium background */
-        }
-        #services .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px var(--shadow-medium);
-        }
-        #services .card-title {
-            color: var(--color-primary-accent);
-            font-family: var(--font-heading);
-            font-weight: 600;
-            font-size: 1.6rem; /* Reduced from 1.8rem */
-            margin-bottom: 0.7rem;
-        }
-        #services .card-text {
-            font-size: 1rem; /* Reduced from 1.05rem */
-            color: var(--color-body-text);
-        }
-        #services .service-icon {
-            font-size: 3rem; /* Reduced from 3.5rem */
-            color: var(--color-secondary-accent); /* Gold accent for icons */
-            margin-bottom: 1.2rem;
-            display: block;
-        }
-
-        /* --- REVIEWS SECTION --- */
-        #reviews {
-            background-color: var(--color-bg-light);
-        }
-        #reviews .slick-slide {
-            padding: 0 20px; /* Spacing for review cards */
-            box-sizing: border-box;
-        }
-        #reviews .review-card {
-            background-color: var(--color-white);
-            border: none;
-            border-radius: var(--border-radius-md);
-            box-shadow: 0 10px 30px var(--shadow-light);
-            padding: 2.5rem;
-            height: 100%; /* Ensure equal height */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        #reviews .review-text {
-            font-style: italic;
-            font-size: 1.05rem; /* Reduced from 1.15rem */
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            color: var(--color-body-text);
-        }
-        #reviews .review-author {
-            font-weight: 600;
-            font-size: 1rem; /* Reduced from 1.1rem */
-            color: var(--color-primary-accent);
-            margin-top: auto; /* Push author to bottom */
-        }
-        /* Reviews slider specific adjustments */
-        #reviews .slick-dots {
-            bottom: -40px;
-        }
-        #reviews .slick-prev, #reviews .slick-next {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        @media (max-width: 768px) {
-            #reviews .slick-prev, #reviews .slick-next {
-                top: 50%; /* Center vertically again */
-                transform: translateY(-50%);
-            }
-        }
-
-
-        /* --- CONTACT SECTION --- */
-        #contact {
-            background-color: var(--color-bg-medium);
-        }
-        #contact .contact-info-block {
-            text-align: center;
-            padding: 2rem; /* Add padding for visual separation */
-            background-color: var(--color-white);
-            border-radius: var(--border-radius-md);
-            box-shadow: 0 10px 30px var(--shadow-light);
-            height: 100%; /* Ensure same height as form on desktop */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #contact .contact-form-block {
-            padding: 2rem; /* Add padding for visual separation */
-            background-color: var(--color-white);
-            border-radius: var(--border-radius-md);
-            box-shadow: 0 10px 30px var(--shadow-light);
-        }
-        #contact .contact-info-block h3 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-            color: var(--color-dark-text);
-        }
-        #contact .contact-info-block p {
-            font-size: 1.05rem;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.02em;
-        }
-        #contact .contact-info-block a {
-            color: var(--color-primary-accent);
-            font-weight: 600;
-            transition: color var(--transition-speed);
-        }
-        #contact .contact-info-block a:hover,
-        #contact .contact-info-block a:focus {
-            color: var(--color-dark-text);
-            text-decoration: underline;
-        }
-        #contact .social-links {
-            margin-top: 2.5rem;
-        }
-        #contact .social-links a {
-            font-size: 2.2rem; /* Reduced from 2.5rem */
-            margin: 0 12px; /* Adjusted margin */
-            color: var(--color-primary-accent);
-            transition: transform var(--transition-speed), color var(--transition-speed);
-        }
-        #contact .social-links a:hover {
-            color: var(--color-dark-text);
-            transform: scale(1.15);
-        }
-        #contact .form-control {
-            border-radius: var(--border-radius-md);
-            padding: 0.8rem 1.2rem;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: none;
-            transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
-        }
-        #contact .form-control:focus {
-            border-color: var(--color-primary-accent);
-            box-shadow: 0 0 0 0.25rem rgba(206, 90, 87, 0.25);
-            outline: none;
-        }
-        #contact textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-
-        /* --- FOOTER --- */
-        footer {
-            background-color: var(--color-dark-text); /* Darker footer */
-            color: var(--color-white);
-            padding: 2.5rem 0;
-            font-size: 0.9rem;
-            font-family: var(--font-body);
-        }
-        footer a {
-            color: var(--color-secondary-accent);
-        }
-        footer a:hover {
-            color: var(--color-white);
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 991.98px) {
-            .navbar-brand { font-size: 1.6rem; }
-            .nav-link { padding: 0.5rem 0.8rem; font-size: 0.9rem; }
-
-            .section { padding: 4rem 0; } /* Further reduced */
-            h2 { font-size: 2.5rem; margin-bottom: 0.8rem;}
-            .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
-
-            #home { min-height: unset; padding-top: 3rem; padding-bottom: 3rem;}
-            #home .hero-text-container { padding: 20px 15px; text-align: center; }
-            #home .hero-image-container { 
-                margin-top: 2rem;
-                height: 350px;
-                justify-content: center;
-                border-radius: var(--border-radius-md);
-            }
-            #home h1 { font-size: 3.5rem; }
-            #home .hero-subtitle { font-size: 1.2rem; margin-bottom: 0.8rem;}
-            #home .hero-description { font-size: 1rem; margin-bottom: 1.5rem; }
-            .btn-theme, .btn-outline-theme {
-                padding: 0.7rem 1.8rem;
-                font-size: 0.95rem;
-                width: 100%;
-                max-width: 280px;
-                margin: 0 auto;
-                display: block;
-            }
-
-            #about { flex-direction: column; text-align: center; }
-            #about .about-image-wrapper { margin-bottom: 2rem; max-width: 300px; height: 300px; }
-            #about h2 { text-align: center; }
-            #about .about-text-content { font-size: 0.95rem; }
-
-            #portfolio .slick-slide img { height: 280px; }
-            .slick-prev { left: -5px; }
-            .slick-next { right: -5px; }
-
-            #services .card-title { font-size: 1.4rem; }
-            #services .service-icon { font-size: 2.5rem; }
-            #services .card-text { font-size: 0.95rem; }
-
-            #reviews .review-card { padding: 1.8rem; }
-            #reviews .review-text { font-size: 0.95rem; }
-            #reviews .review-author { font-size: 0.9rem; }
-            #reviews .slick-dots { bottom: -30px;}
-
-
-            #contact h2 { font-size: 2.5rem; }
-            #contact .contact-info-block, #contact .contact-form-block {
-                padding: 1.5rem; /* Adjust padding for smaller screens */
-                margin-bottom: 1.5rem; /* Add space between blocks on stacked layout */
-            }
-            #contact .contact-info-block h3 {
-                font-size: 1.8rem;
-                margin-bottom: 1rem;
-            }
-            #contact .contact-info-block p {
-                font-size: 0.95rem;
-            }
-            #contact .social-links a { font-size: 2rem; margin: 0 10px; }
-        }
-
-        @media (max-width: 767.98px) {
-            h2 { font-size: 2rem; }
-            .section-subtitle { font-size: 0.9rem; margin-bottom: 1.8rem; }
-
-            #home h1 { font-size: 3rem; }
-            #home .hero-subtitle { font-size: 1rem; }
-            #home .hero-description { font-size: 0.95rem; }
-            #home .hero-image-container { height: 300px; margin-top: 1.5rem; }
-
-            #about .about-image-wrapper { max-width: 250px; height: 250px; }
-
-            #portfolio .slick-slide img { height: 220px; }
-
-            #contact .social-links a { font-size: 1.8rem; margin: 0 8px; }
-        }
-
-        @media (max-width: 575.98px) {
-            #home .hero-image-container { height: 220px; }
-            .btn-theme, .btn-outline-theme { max-width: 90%; }
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -599,15 +42,17 @@
             <div class="row gx-5">
                 <div class="col-lg-6 d-flex align-items-center justify-content-center order-lg-2" data-aos="fade-left" data-aos-duration="1200">
                     <div class="hero-image-container">
-                        <img id="home-img" src="" alt="Priya Fashion Designer" loading="eager" />
+                        <img id="home-img" src="https://placehold.co/800x1000/D5C9B0/3A3A3A?text=Priya+Hero" alt="Priya Fashion Designer" loading="eager" />
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 hero-text-container" data-aos="fade-right" data-aos-duration="1200">
-                    <span class="hero-subtitle">Fashion Designer</span>
-                    <h1>I'm Priya.</h1>
-                    <p class="hero-description">Crafting elegant, bold & unique looks that tell your story.</p>
-                    <a href="#contact" class="btn btn-theme mt-3">Let's Collaborate</a>
-                </div>
+                    
+                    <img id="homeimage" src="images/trans_bg.png" alt="Priya Logo"
+                    style="max-width: 280px; width: 100%; height: auto;" class="mb-3">
+                    <span class="hero-subtitle mb-2" style="font-size: 1.25rem; font-weight: 500;">Fashion Designer</span>
+                    <p class="hero-description mb-3">Crafting elegant, bold & unique looks that tell your story.</p>
+                    <a href="#contact" class="btn btn-theme mt-2">Let's Collaborate</a>
+                  </div>
             </div>
         </div>
     </section>
@@ -615,12 +60,12 @@
     <section id="about" class="section bg-light-alt">
         <div class="container">
             <div class="row align-items-center gx-5">
-                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-duration="1200">
+                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-down-right" data-aos-duration="1200">
                     <div class="about-image-wrapper mx-auto mx-lg-0 mb-4 mb-lg-0">
-                        <img id="about-img" src="" class="img-fluid" alt="About Priya" loading="lazy" />
+                        <img id="about-img" src="https://placehold.co/600x600/CE5A57/FFFFFF?text=About+Priya" class="img-fluid" alt="About Priya" loading="lazy" />
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-left" data-aos-duration="1200">
+                <div class="col-lg-6 text-center text-lg-start" >
                     <h2>About Me</h2>
                     <p id="about-text" class="about-text-content"></p>
                     <a href="#contact" class="btn btn-outline-theme mt-4">Get in Touch</a>
@@ -633,7 +78,8 @@
         <div class="container">
             <h2>My Work</h2>
             <span class="section-subtitle"><em>Latest Collections & Projects</em></span>
-            <div class="slider mt-5" id="portfolio-slider" data-aos="fade-up" data-aos-duration="1200"></div>
+            <div class="slider mt-5" id="portfolio-slider" data-aos="fade-up" data-aos-duration="1200">
+                </div>
         </div>
     </section>
 
@@ -641,7 +87,8 @@
         <div class="container">
             <h2>Services</h2>
             <span class="section-subtitle"><em>What I Offer</em></span>
-            <div class="row mt-5" id="services-list" data-aos="fade-up" data-aos-duration="1200"></div>
+            <div class="row mt-5 gy-4" id="services-list" data-aos="fade-up" data-aos-duration="1200">
+                </div>
         </div>
     </section>
 
@@ -649,7 +96,8 @@
         <div class="container">
             <h2>Client Reviews</h2>
             <span class="section-subtitle"><em>Hear From My Valued Clients</em></span>
-            <div class="slick-slider mt-4" id="review-slider" data-aos="fade-up" data-aos-duration="1200"></div>
+            <div class="slick-slider mt-4" id="review-slider" data-aos="fade-up" data-aos-duration="1200">
+                </div>
         </div>
     </section>
 
@@ -657,10 +105,10 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <span class="section-subtitle"><em>Let's create something beautiful together</em></span>
-            <div class="row gx-4 gy-4 justify-content-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+            <div class="row gx-lg-5 gy-4 justify-content-center">
+                <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1200">
                     <div class="contact-form-block h-100">
-                        <h3 class="mb-4 text-center">Send Me a Message</h3>
+                        <h3>Send Me a Message</h3>
                         <form>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -672,18 +120,18 @@
                             </div>
                             <textarea class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-theme">Send Message</button>
+                                <button type="submit" class="btn btn-theme" id="submitButton">Send Message</button>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+                <div class="col-lg-6" data-aos="zoom-in-left" data-aos-duration="1200">
                     <div class="contact-info-block h-100">
                         <h3>Connect with Me</h3>
-                        <p class="mb-2">Feel free to reach out for custom designs, collaborations, or any inquiries.</p>
-                        <p>Email: <a href="mailto:priya.fashion@example.com">priya.fashion@example.com</a></p>
-                        <p>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
-                        <div class="social-links mt-4">
+                        <p class="mb-3">Feel free to reach out for custom designs, collaborations, or any inquiries.</p>
+                        <p><i class="fas fa-envelope me-2 text-primary-accent-icon"></i>Email: <a href="mailto:priya.fashion@example.com">priya.fashion@example.com</a></p>
+                        <p><i class="fas fa-phone-alt me-2 text-primary-accent-icon"></i>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+                        <div class="social-links">
                             <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
@@ -697,7 +145,13 @@
 
     <footer class="text-center">
         <div class="container">
-            <p>&copy; 2025 Priya Fashion. All rights reserved.</p>
+            <p class="mb-1">&copy; 2025 Priya Fashion. All rights reserved.</p>
+            <p class="designed-by">
+                Designed by Pawan Choudhary
+                <a href="https://www.linkedin.com/in/pawan-choudhary" target="_blank" aria-label="Pawan Choudhary LinkedIn" class="ms-2">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </p>
         </div>
     </footer>
 
@@ -716,49 +170,65 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('https://piyuptdr.github.io/portfolio/data.json')
-                .then(res => {
-                    if (!res.ok) {
-                        throw new Error(`HTTP error! status: ${res.status}`);
-                    }
-                    return res.json();
-                })
-                .then(data => {
-                    // Populate Home section image
-                    document.getElementById('home-img').src = data.home.image;
+            // Function to populate content
+            function populateContent(data) {
+                // Populate Home section image
+                // Ensure data.home and data.home.image exist before trying to set src
+                if (data && data.home && data.home.image) {
+                    const homeImg = document.getElementById('home-img');
+                    if (homeImg) homeImg.src = data.home.image;
+                } else if (data && data.home && !data.home.image) {
+                    console.warn("Home image URL is missing in data.json");
+                }
 
-                    // Populate About section
-                    document.getElementById('about-text').textContent = data.about.text;
-                    document.getElementById('about-img').src = data.about.image;
 
-                    // Populate Services section
-                    const servicesList = document.getElementById('services-list');
+                // Populate About section
+                // Ensure data.about exists before trying to populate
+                if (data && data.about) {
+                    const aboutText = document.getElementById('about-text');
+                    if (aboutText && data.about.text) aboutText.textContent = data.about.text;
+                    else if (aboutText && !data.about.text) console.warn("About text is missing in data.json");
+
+                    const aboutImg = document.getElementById('about-img');
+                    if (aboutImg && data.about.image) aboutImg.src = data.about.image;
+                    else if (aboutImg && !data.about.image) console.warn("About image URL is missing in data.json");
+                }
+
+
+                // Populate Services section
+                // Ensure data.services is an array and has items
+                const servicesList = document.getElementById('services-list');
+                if (servicesList && data && data.services && Array.isArray(data.services) && data.services.length > 0) {
                     servicesList.innerHTML = data.services.map(service => `
-                        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                            <div class="card text-center">
+                        <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                            <div class="card text-center w-100">
                                 <div class="card-body">
-                                    <span class="service-icon"><i class="${service.icon_class}"></i></span>
-                                    <h5 class="card-title">${service.title}</h5>
-                                    <p class="card-text">${service.description}</p>
+                                    <span class="service-icon"><i class="${service.icon_class || 'fas fa-star'}"></i></span>
+                                    <h5 class="card-title">${service.title || 'Service Title'}</h5>
+                                    <p class="card-text">${service.description || 'Service description.'}</p>
                                 </div>
                             </div>
                         </div>
                     `).join('');
+                } else if (servicesList) {
+                     console.warn("Services data is missing or empty in data.json. Services section will be empty.");
+                     servicesList.innerHTML = '<p class="text-center col-12">Services information is currently unavailable.</p>';
+                }
 
-                    // Populate Portfolio slider
-                    const portfolioSlider = document.getElementById('portfolio-slider');
+                // Populate Portfolio slider
+                // Ensure data.portfolio is an array and has items
+                const portfolioSlider = document.getElementById('portfolio-slider');
+                if (portfolioSlider && data && data.portfolio && Array.isArray(data.portfolio) && data.portfolio.length > 0) {
                     portfolioSlider.innerHTML = data.portfolio.map(item => `
                         <div>
-                            <a data-fancybox="gallery" href="${item.image}" data-caption="${item.caption || ''}">
-                                <img src="${item.image}" alt="${item.alt}" />
+                            <a data-fancybox="gallery" href="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" data-caption="${item.caption || ''}">
+                                <img src="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" alt="${item.alt || 'Portfolio item'}" loading="lazy" />
                             </a>
                         </div>
                     `).join('');
 
-                    // Initialize Slick slider for Portfolio AFTER content is set
-                    // Ensure jQuery is loaded before calling Slick
-                    $(portfolioSlider).slick({
-                        infinite: true,
+                    // Initialize Slick Carousel for Portfolio
+                    $('#portfolio-slider').slick({
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         autoplay: true,
@@ -766,68 +236,81 @@
                         dots: true,
                         arrows: true,
                         responsive: [
-                            {
-                                breakpoint: 992,
-                                settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 1
-                                }
-                            },
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    centerMode: true,
-                                    centerPadding: '20px'
-                                }
-                            }
+                            { breakpoint: 992, settings: { slidesToShow: 2 } },
+                            { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } }
                         ]
                     });
+                } else if (portfolioSlider) {
+                    console.warn("Portfolio data is missing or empty in data.json. Portfolio section will be empty.");
+                    portfolioSlider.innerHTML = '<p class="text-center col-12">Portfolio items are currently unavailable.</p>';
+                }
 
-                    // Populate Reviews section
-                    const reviewSlider = document.getElementById('review-slider');
+                 // Initialize Fancybox (should be called regardless of portfolio content to bind to any other fancybox elements if they exist)
+                Fancybox.bind("[data-fancybox]", {
+                    // Your custom options
+                });
+
+
+                // Populate Reviews slider
+                // Ensure data.reviews is an array and has items
+                const reviewSlider = document.getElementById('review-slider');
+                if (reviewSlider && data && data.reviews && Array.isArray(data.reviews) && data.reviews.length > 0) {
                     reviewSlider.innerHTML = data.reviews.map(review => `
-                        <div>
-                            <div class="review-card text-center">
-                                <p class="review-text">"${review.text}"</p>
-                                <h6 class="review-author">- ${review.client}</h6>
+                        <div class="slick-slide-item">
+                            <div class="review-card">
+                                <p class="review-text">"${review.text || 'A great experience!'}"</p>
+                                <p class="review-author">- ${review.client || 'Anonymous'}</p>
                             </div>
                         </div>
                     `).join('');
 
-                    // Initialize Slick slider for Reviews AFTER content is set
-                    $(reviewSlider).slick({
-                        infinite: true,
-                        slidesToShow: 3, /* Show 3 reviews at a time */
+                    // Initialize Slick Carousel for Reviews
+                    $('#review-slider').slick({
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 4000, /* Slower autoplay for reviews */
+                        autoplaySpeed: 4000,
                         dots: true,
-                        arrows: false, /* No arrows for reviews, just dots */
+                        arrows: true,
                         responsive: [
-                            {
-                                breakpoint: 992,
-                                settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 1
-                                }
-                            },
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    centerMode: true,
-                                    centerPadding: '20px'
-                                }
-                            }
+                            { breakpoint: 992, settings: { slidesToShow: 2 } },
+                            { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } }
                         ]
                     });
+                } else if (reviewSlider) {
+                     console.warn("Reviews data is missing or empty in data.json. Reviews section will be empty.");
+                     reviewSlider.innerHTML = '<p class="text-center col-12">Client reviews are currently unavailable.</p>';
+                }
+            }
 
+            fetch('data.json')
+                .then(res => {
+                    if (!res.ok) {
+                        // If the response is not ok (e.g., 404), throw an error to be caught by the catch block
+                        throw new Error(`HTTP error! status: ${res.status} while fetching data.json`);
+                    }
+                    return res.json(); // Attempt to parse the JSON
                 })
-                .catch(err => {
-                    console.error('Error loading JSON data:', err);
+                .then(data => {
+                    // Data successfully fetched and parsed
+                    populateContent(data);
+                })
+                .catch(error => {
+                    // This will catch network errors and errors thrown from the .then(res => ...) block
+                    console.error("Could not load or parse data.json:", error);
+                    // Optionally, inform the user on the page that content could not be loaded.
+                    // For example, by calling populateContent with an empty or error-indicating object,
+                    // or by directly manipulating the DOM here.
+                    // For now, we'll just log the error. The sections will remain empty or show static content.
+                    // To make it clearer that data is missing, you could update the relevant sections:
+                    const servicesList = document.getElementById('services-list');
+                    if(servicesList) servicesList.innerHTML = '<p class="text-center col-12">Could not load services data. Please try again later.</p>';
+                    const portfolioSlider = document.getElementById('portfolio-slider');
+                    if(portfolioSlider) portfolioSlider.innerHTML = '<p class="text-center col-12">Could not load portfolio data. Please try again later.</p>';
+                    const reviewSlider = document.getElementById('review-slider');
+                    if(reviewSlider) reviewSlider.innerHTML = '<p class="text-center col-12">Could not load reviews data. Please try again later.</p>';
+                    const aboutText = document.getElementById('about-text');
+                    if(aboutText) aboutText.textContent = 'About information could not be loaded at this time.';
                 });
         });
     </script>
