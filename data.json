@@ -1,11 +1,10 @@
-
 {
   "home": {
       "image": "images/hero.png"
   },
   "about": {
       "text": "I’m Priya, a passionate designer creating unique, hand-crafted garments that celebrate individuality and elegance. With years of experience in the fashion industry, I specialize in bringing bespoke visions to life, ensuring every piece tells a story. My design philosophy centers on merging classic aesthetics with contemporary trends, resulting in timeless pieces that empower and inspire.",
-      "image": "images/Media.jpg"
+      "image": "images/about_img.jpg"
   },
   "portfolio": [
       { "image": "images/collection1.jpg", "alt": "Elegant Red Dress", "caption": "A stunning evening gown, custom designed for a special occasion." },
