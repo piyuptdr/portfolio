@@ -7,20 +7,20 @@
       "image": "images/about_img.jpg"
   },
   "portfolio": [
-      { "image": "images/collection1.jpg", "alt": "Elegant Red Dress", "caption": "A stunning evening gown, custom designed for a special occasion." },
-      { "image": "images/collection2.jpg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
-      { "image": "images/collection3.jpg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
-      { "image": "images/collection4.jpg", "alt": "Classic Black Evening Gown", "caption": "Timeless elegance with intricate detailing." },
-      { "image": "images/collection5.jpg", "alt": "Modern White Bridal Gown", "caption": "A blend of traditional charm and contemporary style." },
-      { "image": "images/collection6.jpg", "alt": "Contemporary Urban Wear", "caption": "Functional fashion for the metropolitan woman." },
-      { "image": "images/collection7.jpg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
-      { "image": "images/collection8.jpg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
-      { "image": "images/collection9.jpg", "alt": "Sophisticated Beige Suit", "caption": "." },
-      { "image": "images/collection10.jpg", "alt": "Sophisticated Beige Suit", "caption": "T" },
-      { "image": "images/collection11.jpg", "alt": "Sophisticated Beige Suit", "caption": "" },
-      { "image": "images/collection12.jpg", "alt": "Sophisticated Beige Suit", "caption": "" },
-      { "image": "images/collection14.jpg", "alt": "Sophisticated Beige Suit", "caption": "." },
-      { "image": "images/collection14.jpg", "alt": "Sophisticated Beige Suit", "caption": "" }
+      { "image": "images/collection1.jpeg", "alt": "Elegant Red Dress", "caption": "A stunning evening gown, custom designed for a special occasion." },
+      { "image": "images/collection2.jpeg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
+      { "image": "images/collection3.jpeg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
+      { "image": "images/collection4.jpeg", "alt": "Classic Black Evening Gown", "caption": "Timeless elegance with intricate detailing." },
+      { "image": "images/collection5.jpeg", "alt": "Modern White Bridal Gown", "caption": "A blend of traditional charm and contemporary style." },
+      { "image": "images/collection6.jpeg", "alt": "Contemporary Urban Wear", "caption": "Functional fashion for the metropolitan woman." },
+      { "image": "images/collection7.jpeg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
+      { "image": "images/collection8.jpeg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
+      { "image": "images/collection9.jpeg", "alt": "Sophisticated Beige Suit", "caption": "." },
+      { "image": "images/collection10.jpeg", "alt": "Sophisticated Beige Suit", "caption": "T" },
+      { "image": "images/collection11.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" },
+      { "image": "images/collection12.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" },
+      { "image": "images/collection14.jpeg", "alt": "Sophisticated Beige Suit", "caption": "." },
+      { "image": "images/collection14.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" }
       
   ],
   "services": [
