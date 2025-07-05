@@ -1,90 +1,90 @@
 {
   "home": {
-      "image": "images/hero.png"
+    "image": "images/hero.png"
   },
   "about": {
-      "text": "I’m Priya, a passionate designer creating unique, hand-crafted garments that celebrate individuality and elegance. With years of experience in the fashion industry, I specialize in bringing bespoke visions to life, ensuring every piece tells a story. My design philosophy centers on merging classic aesthetics with contemporary trends, resulting in timeless pieces that empower and inspire.",
-      "image": "images/about_img.jpg"
+    "text": "I’m Priya, a passionate designer creating unique, hand-crafted garments that celebrate individuality and elegance. With years of experience in the fashion industry, I specialize in bringing bespoke visions to life, ensuring every piece tells a story. My design philosophy centers on merging classic aesthetics with contemporary trends, resulting in timeless pieces that empower and inspire.",
+    "image": "images/about_img.jpg"
   },
   "portfolio": [
     {
-"caption":"New design",
-"images":[
-"images/collection1.jpeg",
-"images/collection2.jpeg",
-"images/collection3.jpeg",
-"images/collection4.jpeg",
-"images/collection5.jpeg",
-
-]
-},
-{
-"caption":"Dress",
-"images":[
-"images/collection6.jpeg",
-"images/collection7.jpeg",
-"images/collection8.jpeg",
-"images/collection9.jpeg",
-"images/collection10.jpeg",
-
-},{
-"caption":"Tranding",
-"images":[
-"images/collection11.jpeg",
-"images/collection12.jpeg",
-"images/collection13.jpeg",
-"images/collection14.jpeg",
-
-}
+      "caption": "New design",
+      "images": [
+        "images/collection1.jpeg",
+        "images/collection2.jpeg",
+        "images/collection3.jpeg",
+        "images/collection4.jpeg",
+        "images/collection5.jpeg"
+      ]
+    },
+    {
+      "caption": "Dress",
+      "images": [
+        "images/collection6.jpeg",
+        "images/collection7.jpeg",
+        "images/collection8.jpeg",
+        "images/collection9.jpeg",
+        "images/collection10.jpeg"
+      ]
+    },
+    {
+      "caption": "Tranding",
+      "images": [
+        "images/collection11.jpeg",
+        "images/collection12.jpeg",
+        "images/collection13.jpeg",
+        "images/collection14.jpeg"
+      ]
+    }
   ],
   "services": [
-      {
-          "title": "Bridal Couture",
-          "description": "Dream gowns crafted to perfection, ensuring your wedding day is as unique as you are.",
-          "icon_class": "fas fa-gem"
-      },
-      {
-          "title": "Custom Tailoring",
-          "description": "Bespoke suits and dresses, designed to fit your unique style and measurements flawlessly.",
-          "icon_class": "fas fa-cut"
-      },
-      {
-          "title": "Fashion Consultation",
-          "description": "Personalized style advice and wardrobe planning to elevate your personal brand.",
-          "icon_class": "fas fa-comments"
-      },
-      {
-          "title": "Event Wear",
-          "description": "Stunning outfits for special occasions, from red carpet events to exclusive parties.",
-          "icon_class": "fas fa-sparkles"
-      },
-      {
-          "title": "Concept Design",
-          "description": "Bringing your fashion ideas to life from initial sketch to final fabrication.",
-          "icon_class": "fas fa-lightbulb"
-      },
-      {
-          "title": "Sustainable Fashion",
-          "description": "Designing eco-conscious garments with ethically sourced materials and practices.",
-          "icon_class": "fas fa-leaf"
-      }
+    {
+      "title": "Bridal Couture",
+      "description": "Dream gowns crafted to perfection, ensuring your wedding day is as unique as you are.",
+      "icon_class": "fas fa-gem"
+    },
+    {
+      "title": "Custom Tailoring",
+      "description": "Bespoke suits and dresses, designed to fit your unique style and measurements flawlessly.",
+      "icon_class": "fas fa-cut"
+    },
+    {
+      "title": "Fashion Consultation",
+      "description": "Personalized style advice and wardrobe planning to elevate your personal brand.",
+      "icon_class": "fas fa-comments"
+    },
+    {
+      "title": "Event Wear",
+      "description": "Stunning outfits for special occasions, from red carpet events to exclusive parties.",
+      "icon_class": "fas fa-sparkles"
+    },
+    {
+      "title": "Concept Design",
+      "description": "Bringing your fashion ideas to life from initial sketch to final fabrication.",
+      "icon_class": "fas fa-lightbulb"
+    },
+    {
+      "title": "Sustainable Fashion",
+      "description": "Designing eco-conscious garments with ethically sourced materials and practices.",
+      "icon_class": "fas fa-leaf"
+    }
   ],
   "reviews": [
-      {
-          "text": "Priya's creation for my wedding was beyond my wildest dreams. She captured my vision perfectly!",
-          "client": "Ananya S."
-      },
-      {
-          "text": "The attention to detail and personalized service were exceptional. I felt truly beautiful in her design.",
-          "client": "Meera K."
-      },
-      {
-          "text": "Priya has an incredible eye for style and understanding client needs. A true artist!",
-          "client": "Sneha R."
-      },
-      {
-          "text": "Her designs are not just clothes; they're wearable art. So comfortable and elegant.",
-          "client": "Diya P."
-      }
+    {
+      "text": "Priya's creation for my wedding was beyond my wildest dreams. She captured my vision perfectly!",
+      "client": "Ananya S."
+    },
+    {
+      "text": "The attention to detail and personalized service were exceptional. I felt truly beautiful in her design.",
+      "client": "Meera K."
+    },
+    {
+      "text": "Priya has an incredible eye for style and understanding client needs. A true artist!",
+      "client": "Sneha R."
+    },
+    {
+      "text": "Her designs are not just clothes; they're wearable art. So comfortable and elegant.",
+      "client": "Diya P."
+    }
   ]
 }
