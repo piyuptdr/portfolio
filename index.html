@@ -1,319 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Priya - Fashion Designer</title>
-     <meta
+    <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Priya.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">Priya.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <section id="home" class="d-flex align-items-center">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 d-flex align-items-center justify-content-center order-lg-2" data-aos="fade-left" data-aos-duration="1200">
-                    <div class="hero-image-container">
-                        <img id="home-img" src="https://placehold.co/800x1000/D5C9B0/3A3A3A?text=Priya+Hero" alt="Priya Fashion Designer" loading="eager" />
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 hero-text-container" data-aos="fade-right" data-aos-duration="1200">
-                    <img id="homeimage" src="images/trans_bg.png" alt="Priya Logo" class="hero-logo mb-3">
-                    <span class="hero-subtitle mb-2">Fashion Designer</span>
-                    <p class="hero-description mb-3">Crafting elegant, bold & unique looks that tell your story.</p>
-                    <a href="#contact" class="btn btn-theme mt-2">Let's Collaborate</a>
-                </div>
+      <div class="container">
+        <div class="row gx-5">
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-center order-lg-2"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="hero-image-container">
+              <img
+                id="home-img"
+                src="https://placehold.co/800x1000/D5C9B0/3A3A3A?text=Priya+Hero"
+                alt="Priya Fashion Designer"
+                loading="eager"
+              />
             </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center order-lg-1 hero-text-container"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <img
+              id="homeimage"
+              src="images/trans_bg.png"
+              alt="Priya Logo"
+              class="hero-logo mb-3"
+            />
+            <span class="hero-subtitle mb-2">Fashion Designer</span>
+            <p class="hero-description mb-3">
+              Crafting elegant, bold & unique looks that tell your story.
+            </p>
+            <a href="#contact" class="btn btn-theme mt-2">Let's Collaborate</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about" class="section bg-light-alt">
-        <div class="container">
-            <div class="row align-items-center gx-5">
-                <div class="col-lg-6 text-center text-lg-start" data-aos="fade-down-right" data-aos-duration="1200">
-                    <div class="about-image-wrapper mx-auto mx-lg-0 mb-4 mb-lg-0">
-                        <img id="about-img" src="https://placehold.co/600x600/CE5A57/FFFFFF?text=About+Priya" class="img-fluid" alt="About Priya" loading="lazy" />
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center text-lg-start" >
-                    <h2>About Me</h2>
-                    <p id="about-text" class="about-text-content"></p>
-                    <a href="#contact" class="btn btn-outline-theme mt-4">Get in Touch</a>
-                </div>
+      <div class="container">
+        <div class="row align-items-center gx-5">
+          <div
+            class="col-lg-6 text-center text-lg-start"
+            data-aos="fade-down-right"
+            data-aos-duration="1200"
+          >
+            <div class="about-image-wrapper mx-auto mx-lg-0 mb-4 mb-lg-0">
+              <img
+                id="about-img"
+                src="https://placehold.co/600x600/CE5A57/FFFFFF?text=About+Priya"
+                class="img-fluid"
+                alt="About Priya"
+                loading="lazy"
+              />
             </div>
+          </div>
+          <div class="col-lg-6 text-center text-lg-start">
+            <h2>About Me</h2>
+            <p id="about-text" class="about-text-content"></p>
+            <a href="#contact" class="btn btn-outline-theme mt-4"
+              >Get in Touch</a
+            >
+          </div>
         </div>
+      </div>
     </section>
+
+    <!-- <section id="portfolio" class="section">
+      <div class="container">
+        <h2>My Work</h2>
+        <span class="section-subtitle"
+          ><em>Latest Collections & Projects</em></span
+        >
+
+        <div
+          class="slider mt-5"
+          id="portfolio-slider"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        ></div>
+      </div>
+    </section> -->
 
     <section id="portfolio" class="section">
-        <div class="container">
-            <h2>My Work</h2>
-            <span class="section-subtitle"><em>Latest Collections & Projects</em></span>
-            <div class="slider mt-5" id="portfolio-slider" data-aos="fade-up" data-aos-duration="1200">
-                </div>
-        </div>
+      <div class="container">
+        <h2>My Work</h2>
+        <span class="section-subtitle">Latest Collections & Projects</span>
+    
+        <div id="portfolio-slider" class="portfolio-slider"></div>
+      </div>
     </section>
+    
+    
+    
 
     <section id="services" class="section bg-light-alt">
-        <div class="container">
-            <h2>Services</h2>
-            <span class="section-subtitle"><em>What I Offer</em></span>
-            <div class="row mt-5 gy-4" id="services-list" data-aos="fade-up" data-aos-duration="1200">
-                </div>
-        </div>
+      <div class="container">
+        <h2>Services</h2>
+        <span class="section-subtitle"><em>What I Offer</em></span>
+        <div
+          class="row mt-5 gy-4"
+          id="services-list"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        ></div>
+      </div>
     </section>
 
     <section id="reviews" class="section">
-        <div class="container">
-            <h2>Client Reviews</h2>
-            <span class="section-subtitle"><em>Hear From My Valued Clients</em></span>
-            <div class="slick-slider mt-4" id="review-slider" data-aos="fade-up" data-aos-duration="1200">
-                </div>
-        </div>
+      <div class="container">
+        <h2>Client Reviews</h2>
+        <span class="section-subtitle"
+          ><em>Hear From My Valued Clients</em></span
+        >
+        <div
+          class="slick-slider mt-4"
+          id="review-slider"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        ></div>
+      </div>
     </section>
 
     <section id="contact" class="section bg-light-alt">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <span class="section-subtitle"><em>Let's create something beautiful together</em></span>
-            <div class="row gx-lg-5 gy-4 justify-content-center">
-                <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1200">
-                    <div class="contact-form-block h-100">
-                        <h3>Send Me a Message</h3>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required />
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email" required />
-                                </div>
-                            </div>
-                            <textarea class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-theme" id="submitButton">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <span class="section-subtitle"
+          ><em>Let's create something beautiful together</em></span
+        >
+        <div class="row gx-lg-5 gy-4 justify-content-center">
+          <div
+            class="col-lg-6"
+            data-aos="zoom-in-right"
+            data-aos-duration="1200"
+          >
+            <div class="contact-form-block h-100">
+              <h3>Send Me a Message</h3>
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col-lg-6" data-aos="zoom-in-left" data-aos-duration="1200">
-                    <div class="contact-info-block h-100">
-                        <h3>Connect with Me</h3>
-                        <p class="mb-3">Feel free to reach out for custom designs, collaborations, or any inquiries.</p>
-                        <p><i class="fas fa-envelope me-2 text-primary-accent-icon"></i>Email: <a href="mailto:priya.fashion@example.com">pihuptdr233@gmail.com</a></p>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/priya____ptdr____" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.pinterest.com/kavifashiondesigner/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-                            
-                        </div>
-                    </div>
+                <textarea
+                  class="form-control mb-3"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-theme" id="submitButton">
+                    Send Message
+                  </button>
                 </div>
+              </form>
             </div>
+          </div>
+          <div
+            class="col-lg-6"
+            data-aos="zoom-in-left"
+            data-aos-duration="1200"
+          >
+            <div class="contact-info-block h-100">
+              <h3>Connect with Me</h3>
+              <p class="mb-3">
+                Feel free to reach out for custom designs, collaborations, or
+                any inquiries.
+              </p>
+              <p>
+                <i class="fas fa-envelope me-2 text-primary-accent-icon"></i
+                >Email:
+                <a href="mailto:priya.fashion@example.com"
+                  >pihuptdr233@gmail.com</a
+                >
+              </p>
+              <div class="social-links">
+                <a href="https://www.instagram.com/priya____ptdr____" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/kavifashiondesigner/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="text-center">
-        <div class="container">
-            <p class="mb-1">&copy; 2025 Priya Fashion. All rights reserved.</p>
-            <p class="designed-by">
-                Designed by Pawan Choudhary
-                <a href="https://www.linkedin.com/in/pawan-choudhary" target="_blank" aria-label="Pawan Choudhary LinkedIn" class="ms-2">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </p>
-        </div>
+      <div class="container">
+        <p class="mb-1">&copy; 2025 Priya Fashion. All rights reserved.</p>
+        <p class="designed-by">
+          Designed by Pawan Choudhary
+          <a
+            href="https://www.linkedin.com/in/pawan-choudhary"
+            target="_blank"
+            aria-label="Pawan Choudhary LinkedIn"
+            class="ms-2"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            once: true,
-            duration: 1000,
-            easing: 'ease-out',
-        });
+      // Initialize AOS
+      AOS.init({
+        once: true,
+        duration: 1000,
+        easing: "ease-out",
+      });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // Function to populate content
-            function populateContent(data) {
-                // Populate Home section image
-                // Ensure data.home and data.home.image exist before trying to set src
-                if (data && data.home && data.home.image) {
-                    const homeImg = document.getElementById('home-img');
-                    if (homeImg) homeImg.src = data.home.image;
-                } else if (data && data.home && !data.home.image) {
-                    console.warn("Home image URL is missing in data.json");
-                }
+      document.addEventListener("DOMContentLoaded", () => {
+        // Function to populate content
+        function populateContent(data) {
+          // Populate Home section image
+          // Ensure data.home and data.home.image exist before trying to set src
+          if (data && data.home && data.home.image) {
+            const homeImg = document.getElementById("home-img");
+            if (homeImg) homeImg.src = data.home.image;
+          } else if (data && data.home && !data.home.image) {
+            console.warn("Home image URL is missing in data.json");
+          }
 
+          // Populate About section
+          // Ensure data.about exists before trying to populate
+          if (data && data.about) {
+            const aboutText = document.getElementById("about-text");
+            if (aboutText && data.about.text)
+              aboutText.textContent = data.about.text;
+            else if (aboutText && !data.about.text)
+              console.warn("About text is missing in data.json");
 
-                // Populate About section
-                // Ensure data.about exists before trying to populate
-                if (data && data.about) {
-                    const aboutText = document.getElementById('about-text');
-                    if (aboutText && data.about.text) aboutText.textContent = data.about.text;
-                    else if (aboutText && !data.about.text) console.warn("About text is missing in data.json");
+            const aboutImg = document.getElementById("about-img");
+            if (aboutImg && data.about.image) aboutImg.src = data.about.image;
+            else if (aboutImg && !data.about.image)
+              console.warn("About image URL is missing in data.json");
+          }
 
-                    const aboutImg = document.getElementById('about-img');
-                    if (aboutImg && data.about.image) aboutImg.src = data.about.image;
-                    else if (aboutImg && !data.about.image) console.warn("About image URL is missing in data.json");
-                }
-
-
-                // Populate Services section
-                // Ensure data.services is an array and has items
-                const servicesList = document.getElementById('services-list');
-                if (servicesList && data && data.services && Array.isArray(data.services) && data.services.length > 0) {
-                    servicesList.innerHTML = data.services.map(service => `
+          // Populate Services section
+          // Ensure data.services is an array and has items
+          const servicesList = document.getElementById("services-list");
+          if (
+            servicesList &&
+            data &&
+            data.services &&
+            Array.isArray(data.services) &&
+            data.services.length > 0
+          ) {
+            servicesList.innerHTML = data.services
+              .map(
+                (service) => `
                         <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                             <div class="card text-center w-100">
                                 <div class="card-body">
-                                    <span class="service-icon"><i class="${service.icon_class || 'fas fa-star'}"></i></span>
-                                    <h5 class="card-title">${service.title || 'Service Title'}</h5>
-                                    <p class="card-text">${service.description || 'Service description.'}</p>
+                                    <span class="service-icon"><i class="${
+                                      service.icon_class || "fas fa-star"
+                                    }"></i></span>
+                                    <h5 class="card-title">${
+                                      service.title || "Service Title"
+                                    }</h5>
+                                    <p class="card-text">${
+                                      service.description ||
+                                      "Service description."
+                                    }</p>
                                 </div>
                             </div>
                         </div>
-                    `).join('');
-                } else if (servicesList) {
-                     console.warn("Services data is missing or empty in data.json. Services section will be empty.");
-                     servicesList.innerHTML = '<p class="text-center col-12">Services information is currently unavailable.</p>';
-                }
+                    `
+              )
+              .join("");
+          } else if (servicesList) {
+            console.warn(
+              "Services data is missing or empty in data.json. Services section will be empty."
+            );
+            servicesList.innerHTML =
+              '<p class="text-center col-12">Services information is currently unavailable.</p>';
+          }
 
-                // Populate Portfolio slider
-                // Ensure data.portfolio is an array and has items
-                const portfolioSlider = document.getElementById('portfolio-slider');
-                if (portfolioSlider && data && data.portfolio && Array.isArray(data.portfolio) && data.portfolio.length > 0) {
-                    portfolioSlider.innerHTML = data.portfolio.map(item => `
-                        <div>
-                            <a data-fancybox="gallery" href="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" data-caption="${item.caption || ''}">
-                                <img src="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" alt="${item.alt || 'Portfolio item'}" loading="lazy" />
-                            </a>
-                        </div>
-                    `).join('');
+          //           const portfolioSlider = document.getElementById("portfolio-slider");
 
-                    // Initialize Slick Carousel for Portfolio
-                    $('#portfolio-slider').slick({
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        dots: true,
-                        arrows: true,
-                        responsive: [
-                            { breakpoint: 992, settings: { slidesToShow: 2 } },
-                            { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } }
-                        ]
-                    });
-                } else if (portfolioSlider) {
-                    console.warn("Portfolio data is missing or empty in data.json. Portfolio section will be empty.");
-                    portfolioSlider.innerHTML = '<p class="text-center col-12">Portfolio items are currently unavailable.</p>';
-                }
+          //           if (
+          //             portfolioSlider &&
+          //             data &&
+          //             data.portfolio &&
+          //             Array.isArray(data.portfolio) &&
+          //             data.portfolio.length > 0
+          //           ) {
+          //             // portfolioSlider.innerHTML = data.portfolio.map(item => `
+          //             //     <div> <div class="portfolio-card">
+          //             //             <a data-fancybox="gallery" href="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" data-caption="${item.caption || 'Portfolio item'}">
+          //             //                 <img src="${item.image || 'https://placehold.co/600x800?text=Placeholder'}" alt="${item.alt || 'Portfolio item'}" loading="lazy" />
+          //             //             </a>
+          //             //         </div>
+          //             //     </div>
+          //             // `).join('');
+          //             portfolioSlider.innerHTML = data.portfolio
+          //               .map(
+          //                 (item) => `
+          //     <div>
+          //         <div class="portfolio-card">
+          //             <a data-fancybox="gallery" href="${
+          //               item.image || "https://placehold.co/600x800?text=Placeholder"
+          //             }" data-caption="${item.caption || "Portfolio item"}">
+          //                 <img src="${
+          //                   item.image || "https://placehold.co/600x800?text=Placeholder"
+          //                 }" alt="${item.alt || "Portfolio item"}" loading="lazy" />
+          //             </a>
+          //             <div class="portfolio-caption">
+          //                 ${item.caption || "No caption available"}
+          //             </div>
+          //             </div>
+          //     </div>
+          // `
+          //               )
+          //               .join("");
 
-                 // Initialize Fancybox (should be called regardless of portfolio content to bind to any other fancybox elements if they exist)
-                Fancybox.bind("[data-fancybox]", {
-                    // Your custom options
-                });
+          //             // Initialize Slick Carousel for Portfolio
+          //             $("#portfolio-slider").slick({
+          //               slidesToShow: 3, // Shows 3 columns on large screens
+          //               slidesToScroll: 1, // Scrolls one item at a time
+          //               autoplay: true,
+          //               autoplaySpeed: 3000,
+          //               dots: true,
+          //               arrows: true,
+          //               rows: 2, // <--- Key for 2 rows on desktop
+          //               slidesPerRow: 1, // Number of items per row within a single 'logical' slide
+          //               responsive: [
+          //                 {
+          //                   breakpoint: 992, // For tablets and smaller desktops
+          //                   settings: {
+          //                     slidesToShow: 2, // 2 columns
+          //                     rows: 1, // Revert to 1 row
+          //                   },
+          //                 },
+          //                 {
+          //                   breakpoint: 768, // For mobile devices
+          //                   settings: {
+          //                     slidesToShow: 1, // 1 column
+          //                     arrows: false, // No arrows on mobile
+          //                     rows: 1, // Revert to 1 row
+          //                   },
+          //                 },
+          //               ],
+          //             });
+          //           } else if (portfolioSlider) {
+          //             console.warn(
+          //               "Portfolio data is missing or empty in data.json. Portfolio section will be empty."
+          //             );
+          //             portfolioSlider.innerHTML =
+          //               '<p class="text-center col-12 text-muted">Portfolio items are currently unavailable. Please check data.json.</p>';
+          //           }
+
+          //           Fancybox.bind("[data-fancybox]", {});
+          const portfolioSlider = document.getElementById("portfolio-slider");
+
+if (
+  portfolioSlider &&
+  data &&
+  Array.isArray(data.portfolio)
+) {
+  portfolioSlider.innerHTML = data.portfolio
+    .map((item) => {
+      const imagesHTML = item.images
+        .map((img, idx) => {
+          const wideClass = (item.images.length === 1 || idx % 5 === 0) ? "wide" : "";
+          return `
+            <div class="grid-item ${wideClass}">
+              <img src="${img}" alt="${item.caption || "Portfolio"} ${idx + 1}" />
+            </div>
+          `;
+        })
+        .join("");
+
+      return `
+        <div class="portfolio-slide">
+          <div class="group-caption">${item.caption || "Untitled Project"}</div>
+          <div class="collage-grid">
+            ${imagesHTML}
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+
+  // Initialize Slick Slider
+  $("#portfolio-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    adaptiveHeight: true
+  });
+}
 
 
-                // Populate Reviews slider
-                // Ensure data.reviews is an array and has items
-                const reviewSlider = document.getElementById('review-slider');
-                if (reviewSlider && data && data.reviews && Array.isArray(data.reviews) && data.reviews.length > 0) {
-                    reviewSlider.innerHTML = data.reviews.map(review => `
+          // Populate Reviews slider
+          // Ensure data.reviews is an array and has items
+          const reviewSlider = document.getElementById("review-slider");
+          if (
+            reviewSlider &&
+            data &&
+            data.reviews &&
+            Array.isArray(data.reviews) &&
+            data.reviews.length > 0
+          ) {
+            reviewSlider.innerHTML = data.reviews
+              .map(
+                (review) => `
                         <div class="slick-slide-item">
                             <div class="review-card">
-                                <p class="review-text">"${review.text || 'A great experience!'}"</p>
-                                <p class="review-author">- ${review.client || 'Anonymous'}</p>
+                                <p class="review-text">"${
+                                  review.text || "A great experience!"
+                                }"</p>
+                                <p class="review-author">- ${
+                                  review.client || "Anonymous"
+                                }</p>
                             </div>
                         </div>
-                    `).join('');
+                    `
+              )
+              .join("");
 
-                    // Initialize Slick Carousel for Reviews
-                    $('#review-slider').slick({
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 4000,
-                        dots: true,
-                        arrows: true,
-                        responsive: [
-                            { breakpoint: 992, settings: { slidesToShow: 2 } },
-                            { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } }
-                        ]
-                    });
-                } else if (reviewSlider) {
-                     console.warn("Reviews data is missing or empty in data.json. Reviews section will be empty.");
-                     reviewSlider.innerHTML = '<p class="text-center col-12">Client reviews are currently unavailable.</p>';
-                }
+            // Initialize Slick Carousel for Reviews
+            $("#review-slider").slick({
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 4000,
+              dots: true,
+              arrows: true,
+              responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                {
+                  breakpoint: 768,
+                  settings: { slidesToShow: 1, arrows: false },
+                },
+              ],
+            });
+          } else if (reviewSlider) {
+            console.warn(
+              "Reviews data is missing or empty in data.json. Reviews section will be empty."
+            );
+            reviewSlider.innerHTML =
+              '<p class="text-center col-12">Client reviews are currently unavailable.</p>';
+          }
+        }
+
+        fetch("data.json")
+          .then((res) => {
+            if (!res.ok) {
+              // If the response is not ok (e.g., 404), throw an error to be caught by the catch block
+              throw new Error(
+                `HTTP error! status: ${res.status} while fetching data.json`
+              );
             }
-
-            fetch('data.json')
-                .then(res => {
-                    if (!res.ok) {
-                        // If the response is not ok (e.g., 404), throw an error to be caught by the catch block
-                        throw new Error(`HTTP error! status: ${res.status} while fetching data.json`);
-                    }
-                    return res.json(); // Attempt to parse the JSON
-                })
-                .then(data => {
-                    // Data successfully fetched and parsed
-                    populateContent(data);
-                })
-                .catch(error => {
-                    // This will catch network errors and errors thrown from the .then(res => ...) block
-                    console.error("Could not load or parse data.json:", error);
-                    // Optionally, inform the user on the page that content could not be loaded.
-                    // For example, by calling populateContent with an empty or error-indicating object,
-                    // or by directly manipulating the DOM here.
-                    // For now, we'll just log the error. The sections will remain empty or show static content.
-                    // To make it clearer that data is missing, you could update the relevant sections:
-                    const servicesList = document.getElementById('services-list');
-                    if(servicesList) servicesList.innerHTML = '<p class="text-center col-12">Could not load services data. Please try again later.</p>';
-                    const portfolioSlider = document.getElementById('portfolio-slider');
-                    if(portfolioSlider) portfolioSlider.innerHTML = '<p class="text-center col-12">Could not load portfolio data. Please try again later.</p>';
-                    const reviewSlider = document.getElementById('review-slider');
-                    if(reviewSlider) reviewSlider.innerHTML = '<p class="text-center col-12">Could not load reviews data. Please try again later.</p>';
-                    const aboutText = document.getElementById('about-text');
-                    if(aboutText) aboutText.textContent = 'About information could not be loaded at this time.';
-                });
-        });
+            return res.json(); // Attempt to parse the JSON
+          })
+          .then((data) => {
+            // Data successfully fetched and parsed
+            populateContent(data);
+          })
+          .catch((error) => {
+            // This will catch network errors and errors thrown from the .then(res => ...) block
+            console.error("Could not load or parse data.json:", error);
+            // Optionally, inform the user on the page that content could not be loaded.
+            // For example, by calling populateContent with an empty or error-indicating object,
+            // or by directly manipulating the DOM here.
+            // For now, we'll just log the error. The sections will remain empty or show static content.
+            // To make it clearer that data is missing, you could update the relevant sections:
+            const servicesList = document.getElementById("services-list");
+            if (servicesList)
+              servicesList.innerHTML =
+                '<p class="text-center col-12">Could not load services data. Please try again later.</p>';
+            const portfolioSlider = document.getElementById("portfolio-slider");
+            if (portfolioSlider)
+              portfolioSlider.innerHTML =
+                '<p class="text-center col-12">Could not load portfolio data. Please try again later.</p>';
+            const reviewSlider = document.getElementById("review-slider");
+            if (reviewSlider)
+              reviewSlider.innerHTML =
+                '<p class="text-center col-12">Could not load reviews data. Please try again later.</p>';
+            const aboutText = document.getElementById("about-text");
+            if (aboutText)
+              aboutText.textContent =
+                "About information could not be loaded at this time.";
+          });
+      });
     </script>
-</body>
+  </body>
 </html>
-
