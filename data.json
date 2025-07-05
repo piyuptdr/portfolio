@@ -7,21 +7,35 @@
       "image": "images/about_img.jpg"
   },
   "portfolio": [
-      { "image": "images/collection1.jpeg", "alt": "Elegant Red Dress", "caption": "A stunning evening gown, custom designed for a special occasion." },
-      { "image": "images/collection2.jpeg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
-      { "image": "images/collection3.jpeg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
-      { "image": "images/collection4.jpeg", "alt": "Classic Black Evening Gown", "caption": "Timeless elegance with intricate detailing." },
-      { "image": "images/collection5.jpeg", "alt": "Modern White Bridal Gown", "caption": "A blend of traditional charm and contemporary style." },
-      { "image": "images/collection6.jpeg", "alt": "Contemporary Urban Wear", "caption": "Functional fashion for the metropolitan woman." },
-      { "image": "images/collection7.jpeg", "alt": "Vibrant Blue Cocktail Dress", "caption": "Bold and spirited cocktail wear for modern festivities." },
-      { "image": "images/collection8.jpeg", "alt": "Sophisticated Beige Suit", "caption": "Tailored perfection in a classic, versatile shade." },
-      { "image": "images/collection9.jpeg", "alt": "Sophisticated Beige Suit", "caption": "." },
-      { "image": "images/collection10.jpeg", "alt": "Sophisticated Beige Suit", "caption": "T" },
-      { "image": "images/collection11.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" },
-      { "image": "images/collection12.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" },
-      { "image": "images/collection14.jpeg", "alt": "Sophisticated Beige Suit", "caption": "." },
-      { "image": "images/collection14.jpeg", "alt": "Sophisticated Beige Suit", "caption": "" }
-      
+    {
+"caption":"New design",
+"images":[
+"images/collection1.jpeg",
+"images/collection2.jpeg",
+"images/collection3.jpeg",
+"images/collection4.jpeg",
+"images/collection5.jpeg",
+
+]
+},
+{
+"caption":"Dress",
+"images":[
+"images/collection6.jpeg",
+"images/collection7.jpeg",
+"images/collection8.jpeg",
+"images/collection9.jpeg",
+"images/collection10.jpeg",
+
+},{
+"caption":"Tranding",
+"images":[
+"images/collection11.jpeg",
+"images/collection12.jpeg",
+"images/collection13.jpeg",
+"images/collection14.jpeg",
+
+}
   ],
   "services": [
       {
