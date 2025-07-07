@@ -317,6 +317,7 @@ a:focus {
 
 /* --- PORTFOLIO SECTION --- */
 /* ========== Collage Grid ========== */
+/* ========== Collage Grid ========== */
 .collage-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
