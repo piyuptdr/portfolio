@@ -8,13 +8,11 @@
   },
   "portfolio": [
     {
-      "caption": "New design",
+      "caption": "Tie & Dye",
       "images": [
-        "images/collection1.jpeg",
-        "images/collection2.jpeg",
-        "images/collection3.jpeg",
-        "images/collection4.jpeg",
-        "images/collection5.jpeg"
+        "images/collection31.jpeg",
+        "images/collection32.jpeg",
+        "images/collection33.jpeg"
       ]
     },
     {
