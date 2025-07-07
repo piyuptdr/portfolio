@@ -820,7 +820,7 @@ footer .designed-by .fab {
   }
 
   #portfolio .slick-slide img {
-    max-height: 30vh;
+    /* max-height: 30vh; */
   }
 
   #portfolio .portfolio-card {
@@ -943,7 +943,7 @@ footer .designed-by .fab {
   }
 
   #portfolio .slick-slide img {
-    max-height: 320px;
+    /* max-height: 320px; */
   }
 
   #portfolio .portfolio-card {
